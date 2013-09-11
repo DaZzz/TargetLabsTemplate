@@ -58,10 +58,13 @@ ul.mainMenu {
 
 	ul.mainMenu ul {
 		display: none;
-		}
+	}
 
 	ul.mainMenu li:hover {
-		color: #00f;
 		font-weight: 300;
 		border-bottom: 3px solid #00f;
+	}
+
+	ul.mainMenu li:hover a{
+		color: #00f;
 	}
