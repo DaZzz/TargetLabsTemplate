@@ -92,6 +92,7 @@ ul.mainMenu ul {
 	padding: 0;
 	list-style-type: none;
 	position: absolute; 
+	z-index: 10;
 	top: 100%;
 	box-shadow: inset 0 1px #fff, 0 1px 3px rgba(34,25,25,0.4);
 	-moz-box-shadow: inset 0 1px #fff, 0 1px 3px rgba(34,25,25,0.4);
@@ -113,3 +114,32 @@ ul.mainMenu ul {
 			ul.mainMenu ul li a:hover {
 				background: #f1f1f1;
 			}
+
+/****************************************
+ Banner homepage
+*****************************************/
+.mainBanner {
+	color: #fff;
+	position: absolute;
+	z-index: 0;
+	width: 100%;
+	height: 440px;
+	top: 50px;
+	background: url(banner1.png);
+	padding: 0;
+	box-shadow: inset 0px 0px 10px rgba(0,0,0,0.9);
+}
+
+.mainBanner p {
+	position: relative;
+	top: 20px;
+	width: 900px;
+	left: 200px;
+	font-size: 50px;
+	text-shadow: 1px 3px 7px #000;
+}
+
+.mainBanner p span {
+	color: #389fe5;
+}
+
