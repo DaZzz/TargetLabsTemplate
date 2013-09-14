@@ -6,6 +6,7 @@ body {
 	font-weight: 300;
 	padding: 0;
 	margin: 0;
+	min-width: 1000px;
 }
 
 li, p, a {
@@ -19,6 +20,7 @@ li, p, a {
 .headerPanel {
 	height: 50px;
 	width: 100%;
+	min-width: 800px;
 	position: relative;
 	box-shadow:0 1px 3px rgba(34,25,25,0.4);
 	-moz-box-shadow: 0 1px 3px rgba(34,25,25,0.4);
@@ -65,15 +67,17 @@ ul.mainMenu {
 ul.mainMenu>li {
 	float: left;
 	height: 100%;
+	padding-bottom: 9px;
 	margin: 0 15px 0 15px;
+	border-bottom: 3px solid #fff;
 }
 	ul.mainMenu>li:hover {
-		padding-bottom: 9px;	
+			
 		border-bottom: 3px solid #1564ac;
 	}
 
 	ul.mainMenu ul>li a {
-		color: black!important;
+		color: 757575!important;
 	}
 
 		ul.mainMenu li:hover>a {
@@ -92,7 +96,7 @@ ul.mainMenu ul {
 	padding: 0;
 	list-style-type: none;
 	position: absolute; 
-	z-index: 10;
+	z-index: 100;
 	top: 100%;
 	box-shadow: inset 0 1px #fff, 0 1px 3px rgba(34,25,25,0.4);
 	-moz-box-shadow: inset 0 1px #fff, 0 1px 3px rgba(34,25,25,0.4);
@@ -130,6 +134,8 @@ ul.mainMenu ul {
 .mainBanner p:first-child {
 	position: relative;
 	width: 900px;
+	clear: both;
+	min-width: 900px;
 	left: 200px;
 	font-size: 50px;
 	text-shadow: 1px 3px 7px #000;
@@ -142,11 +148,8 @@ ul.mainMenu ul {
 	top: 160px;
 	width: 750px;
 	left: 200px;
-	font-size: 18px;
-	text-shadow: 1px 2px 3px #000;
-	-webkit-text-shadow: 1px 2px 3px #000;
-	-o-text-shadow: 1px 2px 3px #000;
-	-moz-text-shadow: 1px 2px 3px #000;
+	font-size: 16px;
+	text-shadow: 1px 2px 3px #000, 1px 2px 3px #000;
 }
 
 .mainBanner p span {
@@ -168,12 +171,11 @@ ul.mainMenu ul {
  Middle menu
 *****************************************/
 
-/* Home page footer	*/
 div#middleMenuWrapper {
 	position: relative;
 	top: 30px; 
 	height: 400px;
-	width:1000px;
+	width: 1000px;
 	left:50%;  
 	margin: 0 0 0 -500px;  
 }
@@ -228,7 +230,7 @@ Footer menu
 #footer {
 	position: relative;
 	top: 80px;
+	bottom: 0px;
 	background-color: #1564ac;	
 	width: 100%;
-	height: 200px;
 }
