@@ -6,7 +6,7 @@ body {
 	font-weight: 300;
 	padding: 0;
 	margin: 0;
-	min-width: 1000px;
+	min-width: 1100px;
 }
 
 li, p, a {
@@ -147,6 +147,7 @@ ul.mainMenu ul {
 	position: relative;
 	top: 160px;
 	width: 750px;
+	min-width: 750px;
 	left: 200px;
 	font-size: 16px;
 	text-shadow: 1px 2px 3px #000, 1px 2px 3px #000;
