@@ -19,9 +19,10 @@ li, p, a {
 .headerPanel {
 	height: 50px;
 	width: 100%;
-	box-shadow: inset 0 1px #fff, 0 1px 3px rgba(34,25,25,0.4);
-	-moz-box-shadow: inset 0 1px #fff, 0 1px 3px rgba(34,25,25,0.4);
-	-webkit-box-shadow: inset 0 1px #fff, 0 1px 3px rgba(34,25,25,0.4);
+	position: relative;
+	box-shadow:0 1px 3px rgba(34,25,25,0.4);
+	-moz-box-shadow: 0 1px 3px rgba(34,25,25,0.4);
+	-webkit-box-shadow: 0 1px 3px rgba(34,25,25,0.4);
 }
 
 .headerLogo {
@@ -51,7 +52,6 @@ ul.mainMenu {
 	background: #fff;
 	float: right;
 	right: 100px;
-	border-radius: 10px;  
 	list-style: none;
 	position: relative;
 	display: inline-table;
@@ -108,7 +108,7 @@ ul.mainMenu ul {
 		border-bottom: 0;
 	}
 		ul.mainMenu ul li a {
-			padding: 10px 40px;
+			padding: 10px 30px;
 			color: #fff;
 		}	
 			ul.mainMenu ul li a:hover {
@@ -120,11 +120,8 @@ ul.mainMenu ul {
 *****************************************/
 .mainBanner {
 	color: #fff;
-	position: absolute;
-	z-index: 0;
 	width: 100%;
 	height: 400px;
-	top: 50px;
 	background: url(banner.png);
 	padding: 0;
 	box-shadow: inset 0px 0px 10px rgba(0,0,0,0.9);
@@ -132,11 +129,24 @@ ul.mainMenu ul {
 
 .mainBanner p:first-child {
 	position: relative;
-	top: 30px;
 	width: 900px;
 	left: 200px;
 	font-size: 50px;
 	text-shadow: 1px 3px 7px #000;
+	margin: 0;
+	top: 60px;	
+}
+
+.mainBanner p:last-child {
+	position: relative;
+	top: 160px;
+	width: 750px;
+	left: 200px;
+	font-size: 18px;
+	text-shadow: 1px 2px 3px #000;
+	-webkit-text-shadow: 1px 2px 3px #000;
+	-o-text-shadow: 1px 2px 3px #000;
+	-moz-text-shadow: 1px 2px 3px #000;
 }
 
 .mainBanner p span {
@@ -152,14 +162,7 @@ ul.mainMenu ul {
 	color: #9cccf3;
 }
 
-.mainBanner p:last-child {
-	position: relative;
-	top: 80px;
-	width: 700px;
-	left: 200px;
-	font-size: 16px;
-	text-shadow: 1px 3px 7px #000;
-}
+
 
 /****************************************
  Middle menu
@@ -167,11 +170,10 @@ ul.mainMenu ul {
 
 /* Home page footer	*/
 div#middleMenuWrapper {
-	position: absolute;
-	top: 500px;
+	position: relative;
+	top: 30px; 
 	height: 400px;
 	width:1000px;
-	z-index: 100;  
 	left:50%;  
 	margin: 0 0 0 -500px;  
 }
@@ -219,3 +221,14 @@ a.readMore img{
 	padding-left: 10px;
 }
 
+
+/****************************************
+Footer menu
+*****************************************/
+#footer {
+	position: relative;
+	top: 80px;
+	background-color: #1564ac;	
+	width: 100%;
+	height: 200px;
+}
