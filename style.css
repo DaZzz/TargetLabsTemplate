@@ -29,13 +29,13 @@ li, p, a {
 
 .headerLogo {
 	float: left;
-	margin: 5px 0 0 20px;
-	height: 40px;
+	padding: 8;
+	margin: 0 0 0 20px;
+	height: 34px;
 }
 
-.headerLogo img {
-	height: 100%;
-	width: auto;
+.headerLogo:hover{
+	background-color: #f3f3f3;
 }
 
 ul.mainMenu ul {
