@@ -233,6 +233,7 @@ Footer menu
 	position: relative;
 	background-color: #1564ac;	
 	width: 100%;
+	box-shadow: inset 0px 3px 10px rgba(0,0,0,0.5);
 }
 
 /* Sticky footer*/
@@ -244,9 +245,118 @@ html, body {
 	min-height: 100%;
 	height: auto !important;
 	height: 100%;
-	margin: 0 auto -100px; /*(footer size) - margin */
+	margin: 0 auto -300px; /*footer size */
 }
 
-.footer, .push {
-	height: 150px; /*footer size */
+.push {
+	height: 350px;  /* (footer size) + padding */
 }
+.footer {
+	height: 300px; /*footer size */
+}
+
+	/****************************************
+	Footer menu itself
+	*****************************************/
+	.footerMainMenu {
+		position: relative;
+		top: 30px;
+		left: 50%;
+		margin-left: -400px;	
+		list-style: none;
+		display:inline-table;
+	}
+
+	.footerMainMenu>li{
+		display: block;
+		min-width: 130px;
+		float: left;
+	}
+
+	.footerMainMenu>li:first-child,{
+		display: block;
+		min-width: 140px;
+		float: left;
+	}
+
+	.footerMainMenu>li>ul{
+		display: block;
+		list-style: none;
+	}
+
+	.footerMainMenu>li>ul{
+		display: block;
+		-webkit-padding-start: 0px;
+	}
+
+	.footerMainMenu a,
+	.footerMainMenu li,
+	.footerMainMenu ul,
+	.footerMainMenu p {
+		color: white;
+		text-decoration: none;
+	}
+
+	.footerMainMenu a:hover {
+		/*color: #ccc;*/
+		text-decoration: underline;
+	}
+
+	.footerMainMenu>li>a{
+		font-weight: 600;
+	}
+
+	/****************************************
+	Social icons in footer
+	*****************************************/
+
+	.socialIcons {
+		float: right;
+		list-style: none;
+		position: relative;
+		display: inline-block;
+		top: 10px;
+		right: 40px;
+		z-index: 10;
+	}
+
+	.socialIcons li {
+		display: inline;
+		float: left;
+	}
+
+	.socialIcons > li > a {
+		display: block;
+		margin: 5px;
+		width: 38;
+		height: 38;
+		background-image: url(social_icons.png);
+		text-indent: -999999px;
+	}
+
+	.socialIcons > li > a:hover {
+		opacity: 0.8;
+	}
+
+	.socialFb {
+		background-position: 0 0;
+	}
+	
+	.socialTwitter {
+		background-position: 0 76px;
+	}
+
+	.socialLinkedIn {
+		background-position: 0 38px;
+	}
+
+	.footer p {
+		text-align: center;
+		width: 100%;
+		position: relative;
+		color: white;
+		margin-top: 60px;
+		/*left: 50%;*/
+		font-size: 14px;
+		/*margin-left: -180px;*/
+	}
