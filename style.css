@@ -229,10 +229,24 @@ a.readMore img{
 /****************************************
 Footer menu
 *****************************************/
-#footer {
+.footer {
 	position: relative;
-	top: 80px;
-	height: 180px;
 	background-color: #1564ac;	
 	width: 100%;
+}
+
+/* Sticky footer*/
+html, body {
+	height: 100%;
+}
+
+.wrapper {
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	margin: 0 auto -100px; /*(footer size) - margin */
+}
+
+.footer, .push {
+	height: 150px; /*footer size */
 }
