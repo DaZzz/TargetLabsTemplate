@@ -38,7 +38,7 @@ a:hover {
 
 .headerLogo {
 	float: left;
-	padding: 8;
+	padding: 8px;
 	margin: 0 0 0 20px;
 	height: 34px;
 }
@@ -56,7 +56,7 @@ ul.mainMenu ul {
 	}
 
 	ul.mainMenu>li:hover>a{
-		color: #1564ac;
+		color: #1564ac !important;
 	}
 
 ul.mainMenu {
@@ -86,7 +86,7 @@ ul.mainMenu>li {
 	}
 
 	ul.mainMenu ul>li a {
-		color: 757575!important;
+		color: #757575!important;
 	}
 
 		ul.mainMenu li:hover>a {
@@ -95,7 +95,7 @@ ul.mainMenu>li {
 	
 	ul.mainMenu li a {
 		display: block;
-		color: #757575; 
+		color: #757575 !important; 
 		text-decoration: none;
 	}
 
@@ -457,7 +457,21 @@ html, body {
 	position: relative;
 	width: 280px;
 	height: 500px;
-	background-color: #abf;
+	border: 3px dashed #888;
 	z-index: 10;
 	float: right;
 }
+
+/****************************************
+Blue line styling
+*****************************************/
+.blueline-top {
+	position: relative;
+	width: 100%;
+	height: 60px;
+	z-index: 0;
+	background: radial-gradient(50% 300px, circle, #157cda, #14426c);
+	background: -webkit-radial-gradient(50% 300px, circle, #157cda, #14426c);
+	box-shadow: inset 0  8px 8px -8px black, inset 0 -8px 8px -8px black;
+}
+
